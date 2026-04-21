@@ -15,17 +15,18 @@ export type Project = {
 // ⚠️ NEWEST FIRST — always add new projects at the TOP of this array.
 export const projects: Project[] = [
   {
-    id: "portfolio",
-    name: "Portfolio Website",
-    tagline: "Personal developer portfolio with modern aesthetics.",
+    id: "ai-pdf",
+    name: "AI.PDF",
+    tagline: "Upload PDFs and chat with them using AI — in real time.",
     description:
-      "A sleek and modern developer portfolio built with Next.js , React, and Tailwind CSS. It features fully responsive layouts, multi-theme support, and smooth interactive animations managed by Framer Motion.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    role: "Frontend Developer",
-    image: "/projects/Portfolioweb.png",
-    category: "Frontend",
-    gradient: "from-rose-900 via-pink-900 to-slate-950",
+      "AI.PDF is a full-stack web application that lets users upload PDF documents and chat with them using AI. It combines secure authentication, PDF parsing, an interactive viewer, and real-time question answering in one clean interface.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Clerk", "Gemini API", "REST API"],
+    role: "Full Stack Developer",
+    image: "/projects/AIPDF.png",
+    category: "Full Stack",
+    gradient: "from-cyan-900 via-teal-900 to-slate-950",
   },
+
   {
     id: "kpk-traffic-police",
     name: "KPK Traffic Police Management System",
@@ -66,16 +67,17 @@ export const projects: Project[] = [
     category: "Full Stack",
     gradient: "from-purple-900 via-violet-900 to-slate-950",
   },
+
   {
-    id: "ai-pdf",
-    name: "AI.PDF",
-    tagline: "Upload PDFs and chat with them using AI — in real time.",
+    id: "portfolio",
+    name: "Portfolio Website",
+    tagline: "Personal developer portfolio with modern aesthetics.",
     description:
-      "AI.PDF is a full-stack web application that lets users upload PDF documents and chat with them using AI. It combines secure authentication, PDF parsing, an interactive viewer, and real-time question answering in one clean interface.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Clerk", "Gemini API", "REST API"],
-    role: "Full Stack Developer",
-    image: "/projects/AIPDF.png",
-    category: "Full Stack",
-    gradient: "from-cyan-900 via-teal-900 to-slate-950",
+      "A sleek and modern developer portfolio built with Next.js , React, and Tailwind CSS. It features fully responsive layouts, multi-theme support, and smooth interactive animations managed by Framer Motion.",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    role: "Frontend Developer",
+    image: "/projects/Portfolioweb.png",
+    category: "Frontend",
+    gradient: "from-rose-900 via-pink-900 to-slate-950",
   },
 ];
