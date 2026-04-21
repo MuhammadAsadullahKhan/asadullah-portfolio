@@ -186,7 +186,7 @@ export function ContactSection() {
             {/* Floating image card */}
             <motion.div
               animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as const }}
               className="relative rounded-3xl overflow-hidden
                 bg-gradient-to-br from-violet-100 via-indigo-50 to-purple-100
                 dark:from-[#1e1433] dark:via-[#1a1a2e] dark:to-[#16213e]

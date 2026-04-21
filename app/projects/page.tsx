@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Github, ExternalLink, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { projects } from "@/data/projects";
@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 
 /* ─── animation variants ─── */
-const pageVariants = {
+const pageVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -16,12 +16,12 @@ const pageVariants = {
     },
 };
 
-const headingVariants = {
+const headingVariants: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
     hidden: { opacity: 0, y: 24 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
 };

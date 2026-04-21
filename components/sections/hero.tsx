@@ -1,16 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import { Phone, FileText } from "lucide-react";
 
-const fadeUp = (delay = 0) => ({
+const fadeUp = (delay = 0): Variants => ({
   hidden: { opacity: 0, y: 24 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut", delay },
+    transition: { duration: 0.6, ease: "easeOut" as const, delay },
   },
 });
 
@@ -27,7 +27,7 @@ export function HeroSection() {
           initial="hidden"
           animate="visible"
           whileHover={{ scale: 1.04, y: -2 }}
-          transition={{ type: "tween", duration: 0.3, ease: "easeOut" }}
+          transition={{ type: "tween", duration: 0.3, ease: "easeOut" as const }}
           className="cursor-default text-balance text-3xl font-semibold tracking-tight text-[color:var(--card-foreground)] sm:text-4xl lg:text-5xl"
         >
           <span className="bg-gradient-to-r from-sky-500 via-violet-500 to-fuchsia-500 bg-[length:200%_auto] bg-clip-text text-transparent transition-all duration-500 hover:bg-right">
@@ -90,7 +90,7 @@ export function HeroSection() {
           y: {
             duration: 4,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: "easeInOut" as const,
             delay: 0.2
           }
         }}

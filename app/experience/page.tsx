@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { ArrowUpRight, ArrowLeft, Briefcase, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { experience } from "@/data/experience";
@@ -9,7 +9,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 
 /* ─── animation variants ─── */
-const pageVariants = {
+const pageVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -17,17 +17,17 @@ const pageVariants = {
     },
 };
 
-const headingVariants = {
+const headingVariants: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
     hidden: { opacity: 0, y: 24 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
 };
 
-const detailVariants = {
+const detailVariants: Variants = {
     hidden: { opacity: 0, height: 0 },
     visible: {
         opacity: 1,
@@ -41,7 +41,7 @@ const detailVariants = {
     },
 };
 
-const tagVariants = {
+const tagVariants: Variants = {
     hidden: { opacity: 0, scale: 0.85 },
     visible: (i: number) => ({
         opacity: 1,
