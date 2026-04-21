@@ -76,6 +76,8 @@ export const projects: Project[] = [
       "A sleek and modern developer portfolio built with Next.js , React, and Tailwind CSS. It features fully responsive layouts, multi-theme support, and smooth interactive animations managed by Framer Motion.",
     tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     role: "Frontend Developer",
+    liveUrl: "https://asadullah-portfolio.vercel.app/",
+    githubUrl: "https://github.com/MuhammadAsadullahKhan/asadullah-portfolio",
     image: "/projects/Portfolioweb.png",
     category: "Frontend",
     gradient: "from-rose-900 via-pink-900 to-slate-950",
